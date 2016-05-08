@@ -10,14 +10,28 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7762,        203]
-NotebookOptionsPosition[      7303,        183]
-NotebookOutlinePosition[      7639,        198]
-CellTagsIndexPosition[      7596,        195]
+NotebookDataLength[      8956,        230]
+NotebookOptionsPosition[      8383,        208]
+NotebookOutlinePosition[      8719,        223]
+CellTagsIndexPosition[      8676,        220]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[TextData[{
+ "Coded by ",
+ StyleBox["Graham \[OpenCurlyDoubleQuote]The Code Master\
+\[CloseCurlyDoubleQuote] Reynolds",
+  FontFamily->"Comic Sans MS",
+  FontSize->20,
+  FontSlant->"Italic",
+  FontVariations->{"Underline"->True}],
+ ", Niven Achenjang, and Luke Miles in May 2016"
+}], "Text",
+ CellChangeTimes->{{3.671689957851575*^9, 3.671690046138295*^9}, {
+  3.6716907413984756`*^9, 3.671690773237494*^9}, {3.671690887962926*^9, 
+  3.671690892756102*^9}, {3.671690997280682*^9, 3.671691058971939*^9}}],
+
 Cell[BoxData[
  RowBox[{
   RowBox[{"ourRange", "=", 
@@ -54,6 +68,7 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{"EdgeForm", "@", "Thick"}], ",", "Red", ",", 
+     RowBox[{"Opacity", "@", ".5"}], ",", " ", 
      RowBox[{"Table", "[", 
       RowBox[{
        RowBox[{"makeCirc", "[", "]"}], ",", 
@@ -66,7 +81,8 @@ Cell[BoxData[
    3.671686431557654*^9, 3.671686432322517*^9}, {3.671687485739852*^9, 
    3.671687485920506*^9}, {3.671687690854105*^9, 3.6716877091109543`*^9}, {
    3.671687739553486*^9, 3.671687757549127*^9}, {3.671687796537513*^9, 
-   3.671687842218769*^9}, 3.671688073382051*^9}],
+   3.671687842218769*^9}, 3.671688073382051*^9, {3.671690291242259*^9, 
+   3.6716903349484663`*^9}, {3.6716906763201227`*^9, 3.671690678195307*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -119,13 +135,13 @@ Cell[BoxData[{
             RowBox[{"{", 
              RowBox[{"1", ",", "10"}], "}"}]}]}], ";", 
           RowBox[{"image", "=", 
-           RowBox[{"drawCircs", "[", "n", "]"}]}], ";", 
+           RowBox[{"drawCircs", "@", "n"}]}], ";", 
           RowBox[{"dispTime", "=", "0.5"}]}], ",", "\[IndentingNewLine]", "1",
           ",", 
          RowBox[{
           RowBox[{"image", "=", 
-           RowBox[{"Graphics", "[", "White", "]"}]}], ";", 
-          RowBox[{"dispTime", "=", ".3"}]}], ",", "\[IndentingNewLine]", "2", 
+           RowBox[{"Graphics", "@", "White"}]}], ";", 
+          RowBox[{"dispTime", "=", "1"}]}], ",", "\[IndentingNewLine]", "2", 
          ",", 
          RowBox[{
           RowBox[{"image", "=", 
@@ -163,11 +179,12 @@ Cell[BoxData[{
    3.671689076827145*^9}, {3.671689152285009*^9, 3.6716892323614893`*^9}, {
    3.67168926717738*^9, 3.6716893356033163`*^9}, 3.6716894027644987`*^9, {
    3.671689473642991*^9, 3.671689547673133*^9}, {3.6716895816555967`*^9, 
-   3.671689675571479*^9}}],
+   3.671689675571479*^9}, {3.671690407129695*^9, 3.671690409053967*^9}, {
+   3.67169049277387*^9, 3.671690501020134*^9}}],
 
 Cell[BoxData[
  DynamicBox[ToBoxes[
-   Show[$CellContext`image$5284, PlotRange -> $CellContext`ourRange], 
+   Show[$CellContext`image$3551, PlotRange -> $CellContext`ourRange], 
    StandardForm],
   ImageSizeCache->{360., {177., 183.}}]], "Print",
  CellChangeTimes->{{3.6716865229331017`*^9, 3.671686532717692*^9}, {
@@ -178,8 +195,16 @@ Cell[BoxData[
    3.671688304963338*^9, 3.671688757449757*^9, {3.671689038399393*^9, 
    3.671689102629992*^9}, 3.671689238071534*^9, 3.671689335944851*^9, 
    3.671689404865973*^9, {3.6716895928084497`*^9, 3.671689602643702*^9}, {
-   3.671689639880272*^9, 3.671689706182732*^9}}]
-}, Open  ]]
+   3.671689639880272*^9, 3.671689706182732*^9}, 3.67169006577437*^9, 
+   3.671690409857255*^9, 
+   3.67169050241145*^9},ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJztyMEJgEAMRNEEG0k1erKIsAjJQZR1+1dXtAjhD2R4mdlbLKu3LG5T9T2y
+HDZu9Z4GFdHoZ9J9inz1JHu9D8YYY4wxxhhjjPHPLHoBAkI99A==\
+\>"]]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.671690173478318*^9, 3.6716901800899267`*^9}}]
 },
 WindowSize->{1366, 715},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -197,14 +222,16 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 343, 11, 32, "Input"],
-Cell[904, 33, 602, 14, 32, "Input"],
-Cell[1509, 49, 978, 19, 32, "Input"],
-Cell[2490, 70, 1007, 25, 55, "Input"],
+Cell[558, 20, 506, 12, 43, "Text"],
+Cell[1067, 34, 343, 11, 32, "Input"],
+Cell[1413, 47, 602, 14, 32, "Input"],
+Cell[2018, 63, 1126, 21, 32, "Input"],
+Cell[3147, 86, 1007, 25, 55, "Input"],
 Cell[CellGroupData[{
-Cell[3522, 99, 2961, 66, 286, "Input"],
-Cell[6486, 167, 801, 13, 368, "Print"]
-}, Open  ]]
+Cell[4179, 115, 3045, 67, 253, "Input"],
+Cell[7227, 184, 1043, 18, 368, 174, 4, "CachedBoxData", "BoxData", "Print"]
+}, Open  ]],
+Cell[8285, 205, 94, 1, 32, "Input"]
 }
 ]
 *)
